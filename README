@@ -1,0 +1,24 @@
+AHR tID (23 digits):
+YYYYMMDDHHMMSSnnnnnnnnn
+
+Segmentation view:
+DATE | TIME | .NANO
+YYYYMMDD | HHMMSS | .nnnnnnnnn
+
+Example:
+20250117|123045|.123456789
+raw: 20250117123045123456789
+AHR 23-digit timestamp provides:
+YYYY MM DD HH MM SS mmm nnn ppp
+2025 01 17 12 30 45 123 456 789
+^    ^  ^  ^  ^  ^  ^   ^   ^
+|    |  |  |  |  |  |   |   └─ nanoseconds (000-999)
+|    |  |  |  |  |  |   └─── microseconds (000-999)  
+|    |  |  |  |  |  └───── milliseconds (000-999)
+|    |  |  |  |  └─────── seconds (00-59) # divide by 7 frames/sec
+|    |  |  |  └───────── minutes (00-59)
+|    |  |  └─────────── hours (00-23)
+|    |  └───────────── day (01-31)
+|    └─────────────── month (01-12)
+└────────────────── year (0000-9999)
+RE: FPS/s see sh code sh/fps_calc.sh
