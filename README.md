@@ -103,6 +103,7 @@ Instruction is intentionally absent.
 ├── C/           # Connotation → C language
 ├── docs/        # Preserved studies and white papers
 ├── latex/       # LaTeX → issues and solvency
+├── pdf/         # pdf files for external links
 ├── sh/          # Shell scripts as resolved evidence
 ├── references/  # External lineage and citations
 └── README.md
