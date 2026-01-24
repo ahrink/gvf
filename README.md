@@ -25,10 +25,10 @@ No material in this repository exists outside that lineage.
 
 ## Core Reference
 
-### Morphology of SIL  
-**From Static Abbreviation to Scientific Intelligentsia Librarian**  
-Author: Anton H. Romulus  
-Date: 2026-01-17  
+### Morphology of SIL
+**From Static Abbreviation to Scientific Intelligentsia Librarian**
+Author: Anton H. Romulus
+Date: 2026-01-17
 
 This document establishes **SIL (Structured Intelligence Ledger)** as a
 study-first discipline and clarifies its role within GVF governance and
@@ -37,7 +37,7 @@ AHR Ink stewardship.
 📄 Preserved reference:
 `docs/Morphology_of_SIL.pdf` :contentReference[oaicite:0]{index=0}
 
-This paper is foundational.  
+This paper is foundational.
 All downstream GVF articulation assumes its constraints.
 
 ---
@@ -66,7 +66,10 @@ tested, and refined.
 SanAnton publications often precede formal GVF artifacts and should be read
 as contextual groundwork rather than authoritative reference.
 
-San Anton (substack) also defines a clear distinction between patentable, copy rights material under AHR authorship which are not related to the academic cannon but specifics to product development and name recognition associated with royalties.
+San Anton (substack) also defines a clear distinction between patentable, copy rights material under AHR authorship which are not related to the academic cannon but specifics to product development and name recognition associated with royalties. Not artifacts or Unobtainium but the factual passage from Intellectual to Royalty Preserved Knowledge.
+
+AHR Patent Works — ©2025 (Profound product development not artifacts or Unobtainium)
+https://sananton.substack.com/p/copyright-and-intellectual-property
 
 Selected essays address themes such as:
 - Time as structure rather than metadata
@@ -103,4 +106,3 @@ Instruction is intentionally absent.
 ├── sh/          # Shell scripts as resolved evidence
 ├── references/  # External lineage and citations
 └── README.md
-
