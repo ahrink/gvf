@@ -96,6 +96,7 @@ Instruction is intentionally absent.
 /main?
 ├── C/
 ├── docs/        # Preserved studies and white papers
+├── latex/       # LaTeX Some issues and solvency
 ├── sh/          # Shell scripts as resolved evidence
 ├── references/  # External lineage and citations
 └── README.md
