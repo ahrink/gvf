@@ -95,8 +95,9 @@ Instruction is intentionally absent.
 
 ```text
 /main?
-├── C/
+├── C/           # Connotation → C language
 ├── docs/        # Preserved studies and white papers
+├── latex/       # LaTeX → issues and solvency
 ├── sh/          # Shell scripts as resolved evidence
 ├── references/  # External lineage and citations
 └── README.md
