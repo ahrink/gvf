@@ -47,6 +47,7 @@ All downstream GVF articulation assumes its constraints.
 - Preserved white papers (PDF)
 - Research studies and formal drafts
 - Supporting shell scripts as proof of resolution
+- Connotation → C language
 - References to external AHR Ink publications
 
 Artifacts are preserved **because ambiguity was resolved**.
