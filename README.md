@@ -25,10 +25,10 @@ No material in this repository exists outside that lineage.
 
 ## Core Reference
 
-### Morphology of SIL  
-**From Static Abbreviation to Scientific Intelligentsia Librarian**  
-Author: Anton H. Romulus  
-Date: 2026-01-17  
+### Morphology of SIL
+**From Static Abbreviation to Scientific Intelligentsia Librarian**
+Author: Anton H. Romulus
+Date: 2026-01-17
 
 This document establishes **SIL (Structured Intelligence Ledger)** as a
 study-first discipline and clarifies its role within GVF governance and
@@ -37,13 +37,12 @@ AHR Ink stewardship.
 📄 Preserved reference:
 `docs/Morphology_of_SIL.pdf` :contentReference[oaicite:0]{index=0}
 
-This paper is foundational.  
+This paper is foundational.
 All downstream GVF articulation assumes its constraints.
 
 ---
 
 ## What This Repository Contains
-
 - Preserved white papers (PDF)
 - Research studies and formal drafts
 - Supporting shell scripts as proof of resolution
@@ -63,10 +62,15 @@ They function as **inspirational and exploratory material**, documenting
 the intellectual environment in which GVF concepts were articulated,
 tested, and refined.
 
-SanAnton publications often precede formal GVF artifacts and should be read
-as contextual groundwork rather than authoritative reference.
+San Anton (substack) also defines a clear distinction between patentable,
+copy rights material under AHR authorship which are not related to the
+academic cannon but specifics to product development and name recognition
+associated with royalties. Not artifacts or Unobtainium but the factual
+passage from Intellectual to Royalty Preserved Knowledge.
 
-San Anton (substack) also defines a clear distinction between patentable, copy rights material under AHR authorship which are not related to the academic cannon but specifics to product development and name recognition associated with royalties.
+AHR Patent Works — ©2025
+(Profound product development not artifacts or Unobtainium)
+https://sananton.substack.com/p/copyright-and-intellectual-property
 
 Selected essays address themes such as:
 - Time as structure rather than metadata
@@ -75,15 +79,14 @@ Selected essays address themes such as:
 - Preservation over optimization
 - Accumulation versus replacement
 
-SanAnton Substack:
-https://sananton.substack.com
+SanAnton publications often precede formal GVF artifacts and should be
+read as contextual groundwork rather than authoritative reference.
 
+SanAnton Substack: https://sananton.substack.com
 The GVF repository preserves resolved outcomes.
 SanAnton preserves the thinking that made those outcomes possible.
 
-
 ## What This Repository Is Not
-
 - Not a startup repository
 - Not an SDK or API
 - Not documentation-first
@@ -96,7 +99,7 @@ Instruction is intentionally absent.
 ## Indicative Structure
 
 ```text
-/main?
+/main
 ├── C/           # Connotation → C language
 ├── docs/        # Preserved studies and white papers
 ├── latex/       # LaTeX → issues and solvency
