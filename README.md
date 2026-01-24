@@ -66,6 +66,8 @@ tested, and refined.
 SanAnton publications often precede formal GVF artifacts and should be read
 as contextual groundwork rather than authoritative reference.
 
+San Anton (substack) also defines a clear distinction between patentable, copy rights material under AHR authorship which are not related to the academic cannon but specifics to product development and name recognition associated with royalties.
+
 Selected essays address themes such as:
 - Time as structure rather than metadata
 - Workspace design and functional separation
