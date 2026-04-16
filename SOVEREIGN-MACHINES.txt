@@ -1,0 +1,230 @@
+SOVEREIGN MACHINES
+An AHR-GVF Framework for Apolitical Value Measurement
+
+Document ID: GVF-SM-20260416-01 | Version 1.0 | April 16, 2026
+Global Value Foundation — Sovereign Machines Division
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. BARTER REGRESSION THEORY — STATIC FORMULA
+
+Source: "Economic Dynamics (Part 2) — meatus ad aequilibrium et commercia terrae" (2024)
+
+This formula is frozen. It does not change. Only the data changes.
+
+─────────────────────────────────────────
+
+Step 1 — Normalize to Metric Ton
+
+Venue          | Unit            | Conversion to Metric Ton
+---------------|-----------------|-------------------------
+COMEX (CME)    | troy ounce      | × 32,150.7466
+MCX (India)    | 10 grams        | × 100,000
+SGE (China)    | gram            | × 1,000,000
+MOEX (Russia)  | gram            | × 1,000,000
+
+─────────────────────────────────────────
+
+Step 2 — Convert to USD Using Central Bank FX
+
+For each venue i, apply the official central bank exchange rate to convert
+the local venue price into USD per metric ton.
+
+Step 3 — Calculate Global Gold Price (Denominator)
+
+Average the USD/ton figures across all active venues to produce the
+daily global denominator.
+
+Step 4 — Derive Barter Exchange Rates
+
+For any target currency C:
+  Barter Rate(C) = Global Gold Price (USD) ÷ Gold Price (C/ton)
+
+Step 5 — Compare to Market FX
+
+  Deviation = |Barter Rate − Market FX Rate| ÷ Market FX Rate × 100
+
+⚠ Signal Threshold: Deviation > 2% → Barter Regression Opportunity.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. SCAR-AWARE STATE MACHINE (AHR-v3)
+
+The machine remembers. Every collapse leaves a scar.
+
+─────────────────────────────────────────
+
+Core Variables
+
+Variable         | Range                              | Meaning
+-----------------|------------------------------------|------------------------------------------
+ScarLoad         | 0.00 – 1.00                        | Weighted memory of recent structural collapses
+Z(t) coherence   | 0.00 – 1.00                        | Alignment of 8 morphing dynamics
+Regime           | CONTRACT / PRESERVE / EXPAND / STABLE | Current market phase
+Avoidance        | 0.00 – 1.00                        | ScarLoad × penalty + (1 − Z(t)) × penalty
+
+─────────────────────────────────────────
+
+The Hard Halt Rule
+
+  IF Avoidance ≥ 0.80 → HALT. No entries. No regime expansion.
+
+─────────────────────────────────────────
+
+Live Values — April 16, 2026, 03:19 EDT
+
+Variable         | Value                  | Verdict
+-----------------|------------------------|---------------------------
+ScarLoad         | 0.68 → 0.58 (decaying) | Elevated but healing
+Z(t) coherence   | 0.74 → 0.70            | Acceptable
+Regime           | CONTRACT → PRESERVE    | No expansion
+Avoidance        | 0.71 → 0.64            | Below hard halt
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6. SOVEREIGN DATA SOURCES
+
+No Google Finance. No aggregators. Only official financial authorities.
+
+─────────────────────────────────────────
+
+FIAT Layer — National Financial Authorities
+
+Nation   | Authority                  | Format
+---------|----------------------------|--------
+Russia   | Bank of Russia (CBR)       | XML
+China    | PBC / CFETS                | HTML
+India    | Reserve Bank of India (RBI)| HTML
+
+─────────────────────────────────────────
+
+Gold Layer — Trading Venues
+
+Venue  | Product              | Unit              | Conversion to Ton
+-------|----------------------|-------------------|------------------
+COMEX  | Gold Futures (GC)    | troy ounce        | 32,150.7466
+MOEX   | GOLD-6.26 futures    | troy ounce        | 32,150.7466
+SGE    | Au9999               | gram              | 1,000,000
+MCX    | Gold Futures (MAUD)  | 10 grams          | 100,000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7. THE LINUX PIPELINE (Cron + Python)
+
+Architecture: Cron scheduler → Python fetch scripts → CSV/log outputs
+
+Cron Schedule: Daily EOD execution per venue timezone
+Dependencies: Python 3.x, requests, pandas, PyYAML
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8. OUTPUTS
+
+File                    | Content                                    | Frequency
+------------------------|--------------------------------------------|----------
+global_gold_price.csv   | Daily denominator in USD, RUB, INR, CNY   | Daily (EOD)
+barter_deviations.csv   | Gap between market FX and gold-derived FX  | Daily (EOD)
+scarload_daily.csv      | Weighted scar history from all venues      | Daily (EOD)
+regime_state.log        | CONTRACT / PRESERVE / EXPAND / STABLE      | Real-time
+
+─────────────────────────────────────────
+
+Sample Output — Global Gold Price (USD)
+
+Date         | Global USD/ton | COMEX      | MCX        | SGE        | MOEX
+-------------|----------------|------------|------------|------------|------------
+2026-04-16   | 73,810,370     | 76,389,288 | 79,078,331 | 70,149,492 | 69,624,369
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+9. GLOBAL VALUE FOUNDATION (GVF) — INSTITUTIONAL ROLE
+
+Entity | Role
+-------|--------------------------------------------------------------
+AHR    | The framework. The tape. The scar-aware state machine.
+GVF    | The institutional vehicle. The keeper of the Sovereign Machine.
+       | The publisher of the daily denominator.
+
+GVF does not trade. GVF measures.
+
+It publishes the global gold price denominator.
+It archives the deviations.
+It maintains the scar ledger.
+
+Traders use that output. But the machine itself is sovereign —
+above any single trade, bias, or outcome.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+10. THE ARCHIVE — sananton.substack.com
+
+The Substack is the public ledger of the framework's evolution.
+It is not marketing. It is interpretation maturity —
+a public record that the work existed before it was needed.
+
+Post                              | Date | What It Established
+----------------------------------|------|---------------------------------------------
+Gold: A Journey Through Time      | 2024 | Origin of coinage. Gold as temporal value.
+Economic Dynamics (Part 1)        | 2024 | Meatus ad aequilibrium. Approach to equilibrium.
+Economic Dynamics (Part 2)        | 2024 | The global gold price averaging method.
+Workspace Design                  | 2025 | Functional separation. The three workspaces.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+11. THE SOVEREIGN MACHINE MANIFESTO
+
+  "The machine does not believe. It measures.
+   The machine does not vote. It calculates.
+   The machine does not forget. It scars.
+
+   Gold, FIAT, crypto — all are inputs.
+   The denominator is global, not local.
+   The framework is apolitical and atheist.
+   The archive is public.
+   The work continues."
+
+                            — San Anton via AHR
+                              Global Value Foundation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+APPENDIX A — tID Index (Live Execution Record)
+
+Gold-03 through Gold-10 archived as live execution record,
+COMEX session April 16, 2026.
+
+tID     | Chart Time | Event
+--------|------------|-------------------------------------------------------
+Gold-03 | 03:49 EDT  | Fresh scar at 4,820; avoidance > 0.70
+Gold-04 | 03:54 EDT  | Entry at 4,839, exit at 4,846 (WMA rule)
+Gold-05 | 03:54 EDT  | Price at 0.618 Fib; volume = 6
+Gold-07 | 04:16 EDT  | Volume spike 492; breakdown to 4,830
+Gold-08 | 04:19 EDT  | Hammer at 0.786 Fib; exit at 4,835
+Gold-09 | 04:26 EDT  | Re-entry at 4,835 (1 contract)
+Gold-10 | 04:32 EDT  | Exit at Chande Kroll upper (4,834.7)
+
+Net P&L for session:    +6.5 points
+ScarLoad delta:         0.68 → 0.58
+Regime transition:      CONTRACT → PRESERVE
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+APPENDIX C — Conversion Constants
+
+Constant                         | Value          | Precision
+---------------------------------|----------------|----------------------------
+Troy ounces per metric ton       | 32,150.7466    | Exact (1,000,000g ÷ 31.1034768g)
+Grams per metric ton             | 1,000,000      | Exact
+10-gram units per metric ton     | 100,000        | Exact
+COMEX contract multiplier        | 100 troy oz    | Standard
+Standard gold bar (LBMA)         | 400 troy oz    | ≈ 12.4 kg
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+© San Anton™ [τ]
+AHR: in pretio procedere doctrina speramus
+Global Value Foundation — Sovereign Machines Division
+
+The work continues.
+https://github.com/ahrink/gvf/blob/pdf/GVF_history.pdf
+
